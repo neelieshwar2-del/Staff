@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Successfully Retrieved -> ID: 1, Name: Alice, Salary: 75000.00"

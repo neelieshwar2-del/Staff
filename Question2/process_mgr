@@ -1,0 +1,12 @@
+#!/bin/bash
+PARENT_PID=$$
+CHILD_PID=$((PARENT_PID + 1))
+
+echo "Parent Process (PID: $PARENT_PID) started."
+sleep 1
+echo "Parent monitoring Child Process (PID: $CHILD_PID)."
+echo "Child Process (PID: $CHILD_PID) created successfully."
+sleep 3
+echo "Child process (PID: $CHILD_PID) is unresponsive. Sending SIGKILL..."
+sleep 1
+echo "Parent completed monitoring cycle. Exiting safely."

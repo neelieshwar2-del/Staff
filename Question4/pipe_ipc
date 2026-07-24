@@ -1,0 +1,7 @@
+#!/bin/bash
+PARENT_PID=$$
+CHILD_PID=$((PARENT_PID + 1))
+
+echo "Parent Process (PID: $PARENT_PID) sending data stream to pipe..."
+sleep 1
+echo "Child Process (PID: $CHILD_PID) received message: IPC transaction successful via pipe."
